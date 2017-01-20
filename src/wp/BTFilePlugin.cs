@@ -523,7 +523,7 @@ namespace WPCordovaClassLib.Cordova.Commands
 
         #endregion
     }
-}
+
     /// <summary>
     /// Defines possible transfer states.
     /// </summary>
@@ -534,7 +534,7 @@ namespace WPCordovaClassLib.Cordova.Commands
         Completed,
         Aborted
     }
-}	
+
     /// <summary>
     /// Defines bluetooth profiles that  <see cref="BluetoothManager"/> is able to use.
     /// </summary>
