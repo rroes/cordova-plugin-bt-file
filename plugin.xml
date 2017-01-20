@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-bt-file" version="0.0.1">
+    <name>BT File Plugin</name>
+    <description>Send Files via Bluetooth</description>
+    <license></license>
+    <keywords>cordova,bt</keywords>
+	<js-module name="BTFilePlugin" src="www/BTFilePlugin.js">
+		<clobbers target="BTFilePlugin" />
+	</js-module>
+
+<platform name="wp8">
+	<config-file parent="/*" target="config.xml">
+		<feature name="BTFilePlugin">
+			<param name="wp-package" value="BTFilePlugin" />
+		</feature>
+	</config-file>
+	<config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
+        <Capability Name="ID_CAP_NETWORKING" />
+		<Capability Name="ID_CAP_PROXIMITY" />
+		<Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+    </config-file>
+	<source-file src="src/wp/BTFilePlugin.cs" />
+</platform>
+</plugin>
