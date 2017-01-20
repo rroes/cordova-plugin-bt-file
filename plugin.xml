@@ -21,5 +21,10 @@
 		<Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
     </config-file>
 	<source-file src="src/wp/BTFilePlugin.cs" />
+	<source-file src="src/wp/BluetoothFileTransferProgress.cs" />
+	<source-file src="src/wp/BluetoothFileTransferState.cs" />
+	<source-file src="src/wp/BluetoothManager.cs" />
+	<source-file src="src/wp/BluetoothProfile.cs" />
+	<source-file src="src/wp/ProfilePacketFactory.cs" />
 </platform>
 </plugin>
