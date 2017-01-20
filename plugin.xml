@@ -8,24 +8,6 @@
 	<js-module name="BTFilePlugin" src="www/BTFilePlugin.js">
 		<clobbers target="BTFilePlugin" />
 	</js-module>
-<platform name="winphone">
-	<config-file parent="/*" target="config.xml">
-		<feature name="BTFilePlugin">
-			<param name="wp-package" value="BTFilePlugin" />
-		</feature>
-	</config-file>
-	<config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
-        <Capability Name="ID_CAP_NETWORKING" />
-		<Capability Name="ID_CAP_PROXIMITY" />
-		<Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
-    </config-file>
-	<source-file src="src/winphone/BTFilePlugin.cs" />
-	<source-file src="src/winphone/BluetoothFileTransferProgress.cs" />
-	<source-file src="src/winphone/BluetoothFileTransferState.cs" />
-	<source-file src="src/winphone/BluetoothManager.cs" />
-	<source-file src="src/winphone/BluetoothProfile.cs" />
-	<source-file src="src/winphone/ProfilePacketFactory.cs" />
-</platform>
 <platform name="wp8">
 	<config-file parent="/*" target="config.xml">
 		<feature name="BTFilePlugin">
